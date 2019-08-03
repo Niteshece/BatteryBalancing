@@ -14,6 +14,7 @@
 /*                            INCLUDES                                    */
 /**************************************************************************/
 #include "../All_Data/data.h"
+#include <unistd.h>
 
 
 typedef enum
@@ -47,6 +48,12 @@ typedef enum
 /*                      EXTERNAL FUNCTIONS DECLARATIONS                      */
 /*****************************************************************************/
 void app_SwitchStateManager(void);
-
+extern float sfa_cellvoltage[3];        
+extern float sfa_cellresistance[3];     
+extern float sf_loadr;
+extern tswitch_state ts_switchvalue[3];
+extern float sf_systemvoltage;
+extern float sf_systemcurrent;
+extern float sfa_cellcurrent[3];
 
 #endif/*BATTEYOPERATION_H_*/

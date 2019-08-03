@@ -22,6 +22,12 @@
 /*****************************************************************************/
 /*                           STATIC FUNCTION AND VARIABLE                   */
 /*****************************************************************************/
+
+
+
+/*******************************************************************************/
+/*                          LOCAL MODULE VARIABLES                             */
+/*******************************************************************************/
 static void app_data_routine();
 static void app_processing_routine();
 
@@ -29,7 +35,6 @@ static void app_processing_routine();
 /*                          External VARIABLES                             */
 /*******************************************************************************/
 extern int Battery_Low;
-
 
 /**************************************************************************
 * Function name : main()
@@ -65,12 +70,11 @@ int main()
     printf("Enter internal Resistance of cell 3 in ohms\n");
     scanf("%f",&fa_internalr[2]);
     Set_InternalResistance(fa_internalr);
-
-    /*Simulation Started*/
+    
+    /*Simulation Started*/    
     app_processing_routine();
 
-    printf("Simulation Done\n");
-	return ZERO;
+    printf("Processing done\n");
 }
 
 
@@ -82,13 +86,14 @@ int main()
 ***************************************************************************/
 static void app_processing_routine()
 {  
-	/*Check for all cell at 8V*/
-    while((Battery_Low != 1))
+    /*Check for all cell at 8V*/
+	while((Battery_Low != 1))
     {
-        app_SwitchStateManager();
+		app_SwitchStateManager();
         app_data_routine();
-    }
+	}
 }
+
 
 
 /**************************************************************************
@@ -119,7 +124,6 @@ static void app_data_routine()
     
     /*Get System Current*/   
     Get_Systemcurrent(&f_syscurrent);
-    //pthread_mutex_unlock(&mutexLock);
     
     printf("Switch 1 = %d\n", switchstate[0]);
     printf("Cell 1 Voltage = %f \t", fa_cellvoltage[0]);

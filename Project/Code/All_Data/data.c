@@ -46,7 +46,6 @@ float sfa_cellcurrent[3];
 /*                          LOCAL MODULE VARIABLES                             */
 /*******************************************************************************/
 
-
 void Set_CellVolatages(float *voltage)
 {
     sfa_cellvoltage[0] = voltage[0];
@@ -54,13 +53,13 @@ void Set_CellVolatages(float *voltage)
     sfa_cellvoltage[2] = voltage[2];
 }
 
-
 void Get_CellVolatages(float *voltage)
 {
     voltage[0] = sfa_cellvoltage[0];
     voltage[1] = sfa_cellvoltage[1];
     voltage[2] = sfa_cellvoltage[2];
 }
+
 
 void Get_SystemVolatge(float *voltage)
 {
@@ -89,12 +88,10 @@ void Get_SwitchState(tswitch_state *switch_state)
 }
 
 
-
 void Set_LoadValue(float loadohm)
 {
     sf_loadr = loadohm;
 }
-
 
 void Set_InternalResistance(float *internalresistance)
 {
@@ -106,7 +103,7 @@ void Set_InternalResistance(float *internalresistance)
 
 void Set_SwitchState(tswitch_state *switch_state)
 {
-     ts_switchvalue[0] = switch_state[0];
-     ts_switchvalue[1] = switch_state[1];
-     ts_switchvalue[2] = switch_state[2];
+    ts_switchvalue[0] = switch_state[0];
+    ts_switchvalue[1] = switch_state[1];
+    ts_switchvalue[2] = switch_state[2];
 }
