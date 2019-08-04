@@ -35,7 +35,7 @@ Data is abstracted in data.c from user and manipulated only through battery_oper
  
 
 2.	Low Level Design & Algorithm: 
-
+ 
 Consider any switch state, when the assumed state is set the following things happens:
 •	Switches which are open, their respective currents are set to zero.
 •	Switched which are closed, their respective currents are calculated. This will have four scenarios:
