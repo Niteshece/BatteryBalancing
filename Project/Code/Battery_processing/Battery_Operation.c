@@ -13,26 +13,21 @@
 /*****************************************************************************/
 /*                           INCLUDE FILES                               */
 /*****************************************************************************/
-#include <stdio.h>
 #include "BatteryOperation.h"
-
-
-
-#define MIN_OPERATING_VOLTAGE 8
-#define VOLTAGE_LOST_CONST    0.1
-
 
 /*****************************************************************************/
 /*                           STATIC FUNCTION AND VARIABLE                   */
 /*****************************************************************************/
-static void app_VoltageCompare();
-static void app_CalculateVolatgesLeft_OneSwitch(int n);
-static void app_Calculate_Currents_ThreeSwitch();
-static void app_Calculate_Currents_TwoSwitch(int n,int m);
-static void app_Calculate_Currents_OneSwitch(int n);
-static void app_CalculateVolatgesLeft_ThreeSwitch();
-static void app_CalculateVolatgesLeft_TwoSwitch(int n,int m);
+static void app_VoltageCompare(void);
 
+static void app_Calculate_Currents_OneSwitch(int n);
+static void app_Calculate_Currents_TwoSwitch(int n,int m);
+static void app_Calculate_Currents_ThreeSwitch();
+
+
+static void app_CalculateVolatgesLeft_OneSwitch(int n);
+static void app_CalculateVolatgesLeft_TwoSwitch(int n,int m);
+static void app_CalculateVolatgesLeft_ThreeSwitch();
 
 /*******************************************************************************/
 /*                          LOCAL MODULE VARIABLES                             */
@@ -42,6 +37,13 @@ t_switchstates switches_state_next = state_000;
 tswitch_state current_state_set[3] = {OFF}; 
 int Battery_Low = 0;
 
+/**************************************************************************
+* Function name : void app_SwitchStateManager(void)
+* Description   : This API is the state manager for all the switch states 
+				  and is supported by other functions of this file.
+* Parameter     : void
+* Return value  : void
+***************************************************************************/
 void app_SwitchStateManager(void)
 {
     switch(switches_state_current)
@@ -184,7 +186,14 @@ void app_SwitchStateManager(void)
     
 }
 
-static void app_VoltageCompare()
+/**************************************************************************
+* Function name : app_VoltageCompare()
+* Description   : This API calculates the effective voltage and does the 
+				  comparison for next state decision. 
+* Parameter     : void
+* Return value  : void
+***************************************************************************/
+static void app_VoltageCompare(void)
 {
     float temp_voltageIR=0;
     float temp_resistance = 0;
@@ -194,7 +203,7 @@ static void app_VoltageCompare()
     float temp_v3 =0;
     int temp_state = 0;
     
-    /*Cosider If only 1st cell is connected*/
+    /*Consider If only 1st cell is connected*/
     temp_resistance = sfa_cellresistance[0]+sf_loadr;
     temp_current = sfa_cellvoltage[0]/temp_resistance;
     /*drop across IR*/
@@ -206,7 +215,7 @@ static void app_VoltageCompare()
     temp_current = 0;
     temp_voltageIR =0;
     
-        /*Cosider If only 2nd cell is connected*/
+    /*Consider If only 2nd cell is connected*/
     temp_resistance = sfa_cellresistance[1]+sf_loadr;
     temp_current = sfa_cellvoltage[1]/temp_resistance;
     /*drop across IR*/
@@ -220,7 +229,7 @@ static void app_VoltageCompare()
     temp_voltageIR =0;
     sf_systemvoltage = 0;
     
-        /*Cosider If only 2nd cell is connected*/
+    /*Consider If only 2nd cell is connected*/
     temp_resistance = sfa_cellresistance[2]+sf_loadr;
     temp_current = sfa_cellvoltage[2]/temp_resistance;
     /*drop across IR*/
@@ -231,22 +240,22 @@ static void app_VoltageCompare()
     /*temp_v1,temp_v2, temp_v3 are the volatge drop of individual cell 
      * across Load Rl. Which ever will be higher, the corresponding cell 
      * shall be switched ON*/
-    if((temp_v1>=temp_v2)&&(temp_v1>=temp_v3)&&(temp_v1>8))
+    if((temp_v1>=temp_v2)&&(temp_v1>=temp_v3)&&(temp_v1>MIN_OPERATING_VOLTAGE))
     {
         temp_state = temp_state|(1<<0);
         sf_systemvoltage = temp_v1;
     }
-    if((temp_v2>=temp_v1)&&(temp_v2>=temp_v3)&&(temp_v2>8))
+    if((temp_v2>=temp_v1)&&(temp_v2>=temp_v3)&&(temp_v2>MIN_OPERATING_VOLTAGE))
     {
         temp_state = temp_state|(1<<1);
         sf_systemvoltage = temp_v2;
     }
-    if((temp_v3>=temp_v1)&&(temp_v3>=temp_v2)&&(temp_v3>8))
+    if((temp_v3>=temp_v1)&&(temp_v3>=temp_v2)&&(temp_v3>MIN_OPERATING_VOLTAGE))
     {
         temp_state = temp_state|(1<<2);
         sf_systemvoltage = temp_v3;
     }
-    
+    /*If All switches are off i.e all cell at min voltage*/
     if(temp_state == 0 && switches_state_current == state_000)
     {
         Battery_Low = 1;
@@ -255,6 +264,14 @@ static void app_VoltageCompare()
     switches_state_next = temp_state;
 }
 
+
+/**************************************************************************
+* Function name : app_CalculateVolatgesLeft_OneSwitch()
+* Description   : This API calculates the voltage left in one cell if one 
+				  was ON. 
+* Parameter     : int n
+* Return value  : void
+***************************************************************************/
 static void app_CalculateVolatgesLeft_OneSwitch(int n)
 {
     float temp_voltage_leftover = 0;
@@ -262,6 +279,13 @@ static void app_CalculateVolatgesLeft_OneSwitch(int n)
     sfa_cellvoltage[n] = temp_voltage_leftover;
 }
 
+/**************************************************************************
+* Function name : app_CalculateVolatgesLeft_TwoSwitch()
+* Description   : This API calculates the voltage left in two cells if two 
+				  were ON. 
+* Parameter     : int, int
+* Return value  : void
+***************************************************************************/
 static void app_CalculateVolatgesLeft_TwoSwitch(int n,int m)
 {
     float temp_voltage_leftover_celln = 0;
@@ -276,6 +300,13 @@ static void app_CalculateVolatgesLeft_TwoSwitch(int n,int m)
     sfa_cellvoltage[m]=temp_voltage_leftover_cellm;
 }
 
+/**************************************************************************
+* Function name : app_CalculateVolatgesLeft_ThreeSwitch()
+* Description   : This API calculates the voltage left in three cells if three 
+				  were ON. 
+* Parameter     : void
+* Return value  : void
+***************************************************************************/
 static void app_CalculateVolatgesLeft_ThreeSwitch()
 {
     float temp_voltage_leftover_cell1 = 0;
@@ -294,6 +325,13 @@ static void app_CalculateVolatgesLeft_ThreeSwitch()
 }
 
 
+/**************************************************************************
+* Function name : app_Calculate_Currents_OneSwitch()
+* Description   : This API calculates the current of individual cell and 
+				  system when one switch is ON. 
+* Parameter     : int 
+* Return value  : void
+***************************************************************************/
 static void app_Calculate_Currents_OneSwitch(int n)
 {
     /*here nth Resistance is in series with Load Resistance*/
@@ -305,7 +343,13 @@ static void app_Calculate_Currents_OneSwitch(int n)
     sf_systemcurrent = sfa_cellcurrent[n];    
 }
 
-
+/**************************************************************************
+* Function name : app_Calculate_Currents_TwoSwitch()
+* Description   : This API calculates the current of individual cell and 
+				  system when two switches are ON. 
+* Parameter     : int, int 
+* Return value  : void
+***************************************************************************/
 static void app_Calculate_Currents_TwoSwitch(int n ,int m)
 {
     float temp_netResistence=0;
@@ -330,7 +374,13 @@ static void app_Calculate_Currents_TwoSwitch(int n ,int m)
     
 }
 
-
+/**************************************************************************
+* Function name : app_Calculate_Currents_ThreeSwitch()
+* Description   : This API calculates the current of individual cell and 
+				  system when three switches are ON. 
+* Parameter     : void
+* Return value  : void
+***************************************************************************/
 static void app_Calculate_Currents_ThreeSwitch()
 {
     float temp_netResistence = 0;

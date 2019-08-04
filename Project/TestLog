@@ -1,0 +1,118 @@
+
+nitesh@linux-bi1k:~/Documents/Release_Test/Code> ./final
+Enter Volatge for cell 1 in volts
+11
+Enter Volatge for cell 2 in volts
+12 
+Enter Volatge for cell 3 in volts
+13
+Enter Load Value in Ohms
+159
+Enter internal Resistance of cell 1 in ohms
+1
+Enter internal Resistance of cell 2 in ohms
+2
+Enter internal Resistance of cell 3 in ohms
+3
+Simulation Started
+Switch 1 = 0
+Cell 1 Voltage = 11.000000      Cell 1 Current = 0.000000 
+Switch 2 = 0
+Cell 2 Voltage = 12.000000      Cell 2 Current = 0.000000 
+Switch 3 = 0
+Cell 3 Voltage = 13.000000      Cell 3 Current = 0.000000 
+System Load Voltage = 12.759259 System Load current = 0.000000
+Switch 1 = 0
+Cell 1 Voltage = 11.000000      Cell 1 Current = 0.000000 
+Switch 2 = 0
+Cell 2 Voltage = 12.000000      Cell 2 Current = 0.000000 
+Switch 3 = 1
+Cell 3 Voltage = 11.700000      Cell 3 Current = 0.078761 
+System Load Voltage = 11.850932 System Load current = 0.078761
+Switch 1 = 0
+Cell 1 Voltage = 11.000000      Cell 1 Current = 0.000000 
+Switch 2 = 1
+Cell 2 Voltage = 10.800000      Cell 2 Current = 0.073608 
+Switch 3 = 0
+Cell 3 Voltage = 11.700000      Cell 3 Current = 0.000000 
+System Load Voltage = 11.483334 System Load current = 0.073608
+Switch 1 = 0
+Cell 1 Voltage = 11.000000      Cell 1 Current = 0.000000 
+Switch 2 = 0
+Cell 2 Voltage = 10.800000      Cell 2 Current = 0.000000 
+Switch 3 = 1
+Cell 3 Voltage = 10.530000      Cell 3 Current = 0.070885 
+System Load Voltage = 10.931250 System Load current = 0.070885
+Switch 1 = 1
+Cell 1 Voltage = 9.900000       Cell 1 Current = 0.068320 
+Switch 2 = 0
+Cell 2 Voltage = 10.800000      Cell 2 Current = 0.000000 
+Switch 3 = 0
+Cell 3 Voltage = 10.530000      Cell 3 Current = 0.000000 
+System Load Voltage = 10.665838 System Load current = 0.068320
+Switch 1 = 0
+Cell 1 Voltage = 9.900000       Cell 1 Current = 0.000000 
+Switch 2 = 1
+Cell 2 Voltage = 9.720000       Cell 2 Current = 0.066247 
+Switch 3 = 0
+Cell 3 Voltage = 10.530000      Cell 3 Current = 0.000000 
+System Load Voltage = 10.335000 System Load current = 0.066247
+Switch 1 = 0
+Cell 1 Voltage = 9.900000       Cell 1 Current = 0.000000 
+Switch 2 = 0
+Cell 2 Voltage = 9.720000       Cell 2 Current = 0.000000 
+Switch 3 = 1
+Cell 3 Voltage = 9.476999       Cell 3 Current = 0.063796 
+System Load Voltage = 9.838124  System Load current = 0.063796
+Switch 1 = 1
+Cell 1 Voltage = 8.910000       Cell 1 Current = 0.061488 
+Switch 2 = 0
+Cell 2 Voltage = 9.720000       Cell 2 Current = 0.000000 
+Switch 3 = 0
+Cell 3 Voltage = 9.476999       Cell 3 Current = 0.000000 
+System Load Voltage = 9.599255  System Load current = 0.061488
+Switch 1 = 0
+Cell 1 Voltage = 8.910000       Cell 1 Current = 0.000000 
+Switch 2 = 1
+Cell 2 Voltage = 8.748000       Cell 2 Current = 0.059623 
+Switch 3 = 0
+Cell 3 Voltage = 9.476999       Cell 3 Current = 0.000000 
+System Load Voltage = 9.301499  System Load current = 0.059623
+Switch 1 = 0
+Cell 1 Voltage = 8.910000       Cell 1 Current = 0.000000 
+Switch 2 = 0
+Cell 2 Voltage = 8.748000       Cell 2 Current = 0.000000 
+Switch 3 = 1
+Cell 3 Voltage = 8.529300       Cell 3 Current = 0.057417 
+System Load Voltage = 8.854312  System Load current = 0.057417
+Switch 1 = 1
+Cell 1 Voltage = 8.019000       Cell 1 Current = 0.055339 
+Switch 2 = 0
+Cell 2 Voltage = 8.748000       Cell 2 Current = 0.000000 
+Switch 3 = 0
+Cell 3 Voltage = 8.529300       Cell 3 Current = 0.000000 
+System Load Voltage = 8.639329  System Load current = 0.055339
+Switch 1 = 0
+Cell 1 Voltage = 8.019000       Cell 1 Current = 0.000000 
+Switch 2 = 1
+Cell 2 Voltage = 7.873200       Cell 2 Current = 0.053660 
+Switch 3 = 0
+Cell 3 Voltage = 8.529300       Cell 3 Current = 0.000000 
+System Load Voltage = 8.371349  System Load current = 0.053660
+Switch 1 = 0
+Cell 1 Voltage = 8.019000       Cell 1 Current = 0.000000 
+Switch 2 = 0
+Cell 2 Voltage = 7.873200       Cell 2 Current = 0.000000 
+Switch 3 = 1
+Cell 3 Voltage = 7.676370       Cell 3 Current = 0.051675 
+System Load Voltage = 0.000000  System Load current = 0.051675
+Switch 1 = 0
+Cell 1 Voltage = 8.019000       Cell 1 Current = 0.000000 
+Switch 2 = 0
+Cell 2 Voltage = 7.873200       Cell 2 Current = 0.000000 
+Switch 3 = 0
+Cell 3 Voltage = 7.676370       Cell 3 Current = 0.000000 
+System Load Voltage = 0.000000  System Load current = 0.000000
+Processing done
+nitesh@linux-bi1k:~/Documents/Release_Test/Code> 
+ 

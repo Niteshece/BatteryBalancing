@@ -22,14 +22,14 @@
 /*****************************************************************************/
 /*                           STATIC FUNCTION AND VARIABLE                   */
 /*****************************************************************************/
-
+static void app_data_routine();
+static void app_processing_routine();
 
 
 /*******************************************************************************/
 /*                          LOCAL MODULE VARIABLES                             */
 /*******************************************************************************/
-static void app_data_routine();
-static void app_processing_routine();
+
 
 /*******************************************************************************/
 /*                          External VARIABLES                             */
@@ -71,9 +71,10 @@ int main()
     scanf("%f",&fa_internalr[2]);
     Set_InternalResistance(fa_internalr);
     
-    /*Simulation Started*/    
-    app_processing_routine();
+    /*Simulation Started*/
 
+	printf("Simulation Started\n");
+    app_processing_routine();
     printf("Processing done\n");
 }
 
@@ -125,6 +126,7 @@ static void app_data_routine()
     /*Get System Current*/   
     Get_Systemcurrent(&f_syscurrent);
     
+	/*Display all data as standard output*/
     printf("Switch 1 = %d\n", switchstate[0]);
     printf("Cell 1 Voltage = %f \t", fa_cellvoltage[0]);
     printf("Cell 1 Current = %f \n", fa_cellcurrent[0]);
