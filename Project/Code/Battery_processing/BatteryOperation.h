@@ -20,9 +20,15 @@
 /*****************************************************************************/
 /*                           MACRO DEFINITIONS                               */
 /*****************************************************************************/
-#define MIN_OPERATING_VOLTAGE 8
-#define VOLTAGE_LOST_CONST    0.1
+#define CUT_OFF_VOLTAGE         8           /*Min operating volatge for a cell*/
+#define VOLTAGE_UPDATE_TIME     1000000     /*in micro-secs , 1sec*/
+#define CELL_CAPACITY           360    /*in Ampsechere- .001Amphr - */
+#define FAST_DISCHARGE_VOLTAGE  11
+#define ROUNDOFFENABLE          1
+#define CUTOFF_VOLTAGE          8
 
+#define TRUE                    1
+#define FALSE                   0
 
 
 /*****************************************************************************/
@@ -39,22 +45,47 @@ typedef enum
     state_110 = 6,
     state_111 = 7,/*All Switched are ON*/
     
-}t_switchstates;
+    
+}t_switchstates; /*Enum to define all possible combination of cell switches*/
+
+
+typedef struct
+{
+    float coordinate_x;
+    float coordinate_y;
+}pointcoordinate;       /*Structure for a particular Point on Graph*/
+
+
+typedef struct
+{
+    pointcoordinate point_A;
+    pointcoordinate point_B;
+    pointcoordinate point_C;
+    float slope_m1;
+    float slope_m2;
+}cell_coordinates;      /*Structure to represent the graphical paramenters of a particular cell*/
+
 
 
 
 /*****************************************************************************/
 /*                      EXTERNAL FUNCTIONS DECLARATIONS                      */
 /*****************************************************************************/
-void app_SwitchStateManager(void);
 
 void app_SwitchStateManager(void);
-extern float sfa_cellvoltage[3];        
-extern float sfa_cellresistance[3];     
+void app_CalculateSlope(void);
+
+/*cell paramenters*/
+extern Battery_data battery[3];
+ 
+
+
+/*Load Value*/
 extern float sf_loadr;
-extern tswitch_state ts_switchvalue[3];
+
+/*System paramenters*/
 extern float sf_systemvoltage;
 extern float sf_systemcurrent;
-extern float sfa_cellcurrent[3];
+
 
 #endif/*BATTEYOPERATION_H_*/

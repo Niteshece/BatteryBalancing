@@ -7,7 +7,7 @@ CFLAGS = -g
 	$(CC) $(CFLAGS) -c -o $@ $<
 
 final : $(OBJ)
-	gcc -o $@ $^ 	
+	gcc -lm -o $@ $^ 	
 	
 clean : 
 	rm -rfv All_Data/*o Battery_processing/*o /*o

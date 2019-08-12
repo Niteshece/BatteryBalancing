@@ -32,6 +32,13 @@ typedef enum
 }tswitch_state;
 
 
+typedef struct
+{
+    float resistance;
+    float current;
+    float voltage;
+    tswitch_state switchstate;    
+}Battery_data;             /*Structure to represent the data of a particular Battery*/
 
 
 /*****************************************************************************/

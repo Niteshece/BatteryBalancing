@@ -1,0 +1,1021 @@
+nitesh@linux-bi1k:~/Documents/Code> clear       
+nitesh@linux-bi1k:~/Documents/Code> make        
+gcc -g  -c -o application.o application.c
+gcc -lm -o final All_Data/data.o Battery_processing/Battery_Operation.o application.o 
+nitesh@linux-bi1k:~/Documents/Code> ./final
+Enter Volatge for cell 1 in volts
+15
+Enter Volatge for cell 2 in volts
+16
+Enter Volatge for cell 3 in volts
+17
+Enter Load Value in ohms
+159
+Enter internal Resistance of cell 1 in ohms
+1
+Enter internal Resistance of cell 2 in ohms
+2
+Enter internal Resistance of cell 3 in ohms
+3
+Simulation Started
+
+Effective Voltages = 0.000000   ,0.000000       ,0.000000
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 15.000000      Cell 2 Voltage = 16.000000      Cell 3 Voltage = 17.000000 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 16.600000 System Load current = 0.000000
+
+
+
+Effective Voltages = 14.900000  ,15.800000      ,16.600000
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 15.000000      Cell 2 Voltage = 16.000000      Cell 3 Voltage = 16.958870 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.102469 
+System Load Voltage = 16.600000 System Load current = 0.102469
+
+
+
+Effective Voltages = 14.900000  ,15.800000      ,16.600000
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 15.000000      Cell 2 Voltage = 16.000000      Cell 3 Voltage = 16.917839 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.102469 
+System Load Voltage = 16.600000 System Load current = 0.102469
+
+
+
+Effective Voltages = 14.900000  ,15.800000      ,16.600000
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 15.000000      Cell 2 Voltage = 16.000000      Cell 3 Voltage = 16.876907 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.102469 
+System Load Voltage = 16.500000 System Load current = 0.102469
+
+
+
+Effective Voltages = 14.900000  ,15.800000      ,16.500000
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 15.000000      Cell 2 Voltage = 16.000000      Cell 3 Voltage = 16.836321 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.101852 
+System Load Voltage = 16.500000 System Load current = 0.101852
+
+
+
+Effective Voltages = 14.900000  ,15.800000      ,16.500000
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 15.000000      Cell 2 Voltage = 16.000000      Cell 3 Voltage = 16.795832 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.101852 
+System Load Voltage = 16.400000 System Load current = 0.101852
+
+
+
+Effective Voltages = 14.900000  ,15.800000      ,16.400000
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 15.000000      Cell 2 Voltage = 16.000000      Cell 3 Voltage = 16.755686 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.101235 
+System Load Voltage = 16.400000 System Load current = 0.101235
+
+
+
+Effective Voltages = 14.900000  ,15.800000      ,16.400000
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 15.000000      Cell 2 Voltage = 16.000000      Cell 3 Voltage = 16.715635 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.101235 
+System Load Voltage = 16.400000 System Load current = 0.101235
+
+
+
+Effective Voltages = 14.900000  ,15.800000      ,16.400000
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 15.000000      Cell 2 Voltage = 16.000000      Cell 3 Voltage = 16.675680 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.101235 
+System Load Voltage = 16.299999 System Load current = 0.101235
+
+
+
+Effective Voltages = 14.900000  ,15.800000      ,16.299999
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 15.000000      Cell 2 Voltage = 16.000000      Cell 3 Voltage = 16.636065 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.100617 
+System Load Voltage = 16.299999 System Load current = 0.100617
+
+
+
+Effective Voltages = 14.900000  ,15.800000      ,16.299999
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 15.000000      Cell 2 Voltage = 16.000000      Cell 3 Voltage = 16.596542 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.100617 
+System Load Voltage = 16.200001 System Load current = 0.100617
+
+
+
+Effective Voltages = 14.900000  ,15.800000      ,16.200001
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 15.000000      Cell 2 Voltage = 16.000000      Cell 3 Voltage = 16.557356 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.100000 
+System Load Voltage = 16.200001 System Load current = 0.100000
+
+
+
+Effective Voltages = 14.900000  ,15.800000      ,16.200001
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 15.000000      Cell 2 Voltage = 16.000000      Cell 3 Voltage = 16.518263 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.100000 
+System Load Voltage = 16.200001 System Load current = 0.100000
+
+
+
+Effective Voltages = 14.900000  ,15.800000      ,16.200001
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 15.000000      Cell 2 Voltage = 16.000000      Cell 3 Voltage = 16.479261 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.100000 
+System Load Voltage = 16.100000 System Load current = 0.100000
+
+
+
+Effective Voltages = 14.900000  ,15.800000      ,16.100000
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 15.000000      Cell 2 Voltage = 16.000000      Cell 3 Voltage = 16.440592 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.099383 
+System Load Voltage = 16.100000 System Load current = 0.099383
+
+
+
+Effective Voltages = 14.900000  ,15.800000      ,16.100000
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 15.000000      Cell 2 Voltage = 16.000000      Cell 3 Voltage = 16.402014 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.099383 
+System Load Voltage = 16.000000 System Load current = 0.099383
+
+
+
+Effective Voltages = 14.900000  ,15.800000      ,16.000000
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 15.000000      Cell 2 Voltage = 16.000000      Cell 3 Voltage = 16.363766 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.098765 
+System Load Voltage = 16.000000 System Load current = 0.098765
+
+
+
+Effective Voltages = 14.900000  ,15.800000      ,16.000000
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 15.000000      Cell 2 Voltage = 16.000000      Cell 3 Voltage = 16.325605 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.098765 
+System Load Voltage = 16.000000 System Load current = 0.098765
+
+
+
+Effective Voltages = 14.900000  ,15.800000      ,16.000000
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 15.000000      Cell 2 Voltage = 16.000000      Cell 3 Voltage = 16.287535 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.098765 
+System Load Voltage = 15.900000 System Load current = 0.098765
+
+
+
+Effective Voltages = 14.900000  ,15.800000      ,15.900000
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 15.000000      Cell 2 Voltage = 16.000000      Cell 3 Voltage = 16.249790 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.098148 
+System Load Voltage = 15.900000 System Load current = 0.098148
+
+
+
+Effective Voltages = 14.900000  ,15.800000      ,15.900000
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 15.000000      Cell 2 Voltage = 16.000000      Cell 3 Voltage = 16.212133 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.098148 
+System Load Voltage = 15.900000 System Load current = 0.098148
+
+
+
+Effective Voltages = 14.900000  ,15.800000      ,15.900000
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 15.000000      Cell 2 Voltage = 16.000000      Cell 3 Voltage = 16.174564 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.098148 
+System Load Voltage = 15.800000 System Load current = 0.098148
+
+
+
+Effective Voltages = 14.900000  ,15.800000      ,15.800000
+Switch 1 = 0                    Switch 2 = 1                    Switch 3 = 1
+Cell 1 Voltage = 15.000000      Cell 2 Voltage = 15.431911      Cell 3 Voltage = 15.568150 
+Cell 1 Current = 0.000000       Cell 2 Current = 3.195506       Cell 3 Current = 3.175780 
+System Load Voltage = 15.200000 System Load current = 6.371286
+
+
+
+Effective Voltages = 14.900000  ,15.200000      ,15.200000
+Switch 1 = 0                    Switch 2 = 1                    Switch 3 = 1
+Cell 1 Voltage = 15.000000      Cell 2 Voltage = 14.904799      Cell 3 Voltage = 15.006636 
+Cell 1 Current = 0.000000       Cell 2 Current = 3.074157       Cell 3 Current = 3.055181 
+System Load Voltage = 14.900000 System Load current = 6.129338
+
+
+
+Effective Voltages = 14.900000  ,14.700000      ,14.700000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 14.970899      Cell 2 Voltage = 14.904799      Cell 3 Voltage = 15.006636 
+Cell 1 Current = 0.093125       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 14.800000 System Load current = 0.093125
+
+
+
+Effective Voltages = 14.800000  ,14.700000      ,14.700000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 14.942048      Cell 2 Voltage = 14.904799      Cell 3 Voltage = 15.006636 
+Cell 1 Current = 0.092500       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 14.800000 System Load current = 0.092500
+
+
+
+Effective Voltages = 14.800000  ,14.700000      ,14.700000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 14.913254      Cell 2 Voltage = 14.904799      Cell 3 Voltage = 15.006636 
+Cell 1 Current = 0.092500       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 14.800000 System Load current = 0.092500
+
+
+
+Effective Voltages = 14.800000  ,14.700000      ,14.700000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 14.884515      Cell 2 Voltage = 14.904799      Cell 3 Voltage = 15.006636 
+Cell 1 Current = 0.092500       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 14.700000 System Load current = 0.092500
+
+
+
+Effective Voltages = 14.700000  ,14.700000      ,14.700000
+Switch 1 = 1                    Switch 2 = 1                    Switch 3 = 1
+Cell 1 Voltage = 14.191017      Cell 2 Voltage = 14.313872      Cell 3 Voltage = 14.532771 
+Cell 1 Current = 6.709231       Cell 2 Current = 5.352308       Cell 3 Current = 4.012136 
+System Load Voltage = 14.200000 System Load current = 16.073675
+
+
+
+Effective Voltages = 14.100000  ,14.100000      ,14.200000
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 14.191017      Cell 2 Voltage = 14.313872      Cell 3 Voltage = 14.502694 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.087654 
+System Load Voltage = 14.200000 System Load current = 0.087654
+
+
+
+Effective Voltages = 14.100000  ,14.100000      ,14.200000
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 14.191017      Cell 2 Voltage = 14.313872      Cell 3 Voltage = 14.472679 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.087654 
+System Load Voltage = 14.200000 System Load current = 0.087654
+
+
+
+Effective Voltages = 14.100000  ,14.100000      ,14.200000
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 14.191017      Cell 2 Voltage = 14.313872      Cell 3 Voltage = 14.442726 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.087654 
+System Load Voltage = 14.100000 System Load current = 0.087654
+
+
+
+Effective Voltages = 14.100000  ,14.100000      ,14.100000
+Switch 1 = 1                    Switch 2 = 1                    Switch 3 = 1
+Cell 1 Voltage = 13.556818      Cell 2 Voltage = 13.769537      Cell 3 Voltage = 14.005282 
+Cell 1 Current = 6.435385       Cell 2 Current = 5.133846       Cell 3 Current = 3.848376 
+System Load Voltage = 13.700000 System Load current = 15.417607
+
+
+
+Effective Voltages = 13.400000  ,13.500000      ,13.700000
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 13.556818      Cell 2 Voltage = 13.769537      Cell 3 Voltage = 13.977318 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.084568 
+System Load Voltage = 13.700000 System Load current = 0.084568
+
+
+
+Effective Voltages = 13.400000  ,13.500000      ,13.700000
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 13.556818      Cell 2 Voltage = 13.769537      Cell 3 Voltage = 13.949409 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.084568 
+System Load Voltage = 13.600000 System Load current = 0.084568
+
+
+
+Effective Voltages = 13.400000  ,13.500000      ,13.600000
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 13.556818      Cell 2 Voltage = 13.769537      Cell 3 Voltage = 13.921759 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.083951 
+System Load Voltage = 13.600000 System Load current = 0.083951
+
+
+
+Effective Voltages = 13.400000  ,13.500000      ,13.600000
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 13.556818      Cell 2 Voltage = 13.769537      Cell 3 Voltage = 13.894163 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.083951 
+System Load Voltage = 13.600000 System Load current = 0.083951
+
+
+
+Effective Voltages = 13.400000  ,13.500000      ,13.600000
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 13.556818      Cell 2 Voltage = 13.769537      Cell 3 Voltage = 13.866623 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.083951 
+System Load Voltage = 13.600000 System Load current = 0.083951
+
+
+
+Effective Voltages = 13.400000  ,13.500000      ,13.600000
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 13.556818      Cell 2 Voltage = 13.769537      Cell 3 Voltage = 13.839137 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.083951 
+System Load Voltage = 13.500000 System Load current = 0.083951
+
+
+
+Effective Voltages = 13.400000  ,13.500000      ,13.500000
+Switch 1 = 0                    Switch 2 = 1                    Switch 3 = 1
+Cell 1 Voltage = 13.556818      Cell 2 Voltage = 13.351810      Cell 3 Voltage = 13.395812 
+Cell 1 Current = 0.000000       Cell 2 Current = 2.730337       Cell 3 Current = 2.713483 
+System Load Voltage = 13.400000 System Load current = 5.443820
+
+
+
+Effective Voltages = 13.400000  ,13.100000      ,13.100000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 13.533164      Cell 2 Voltage = 13.351810      Cell 3 Voltage = 13.395812 
+Cell 1 Current = 0.083750       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 13.400000 System Load current = 0.083750
+
+
+
+Effective Voltages = 13.400000  ,13.100000      ,13.100000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 13.509551      Cell 2 Voltage = 13.351810      Cell 3 Voltage = 13.395812 
+Cell 1 Current = 0.083750       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 13.400000 System Load current = 0.083750
+
+
+
+Effective Voltages = 13.400000  ,13.100000      ,13.100000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 13.485980      Cell 2 Voltage = 13.351810      Cell 3 Voltage = 13.395812 
+Cell 1 Current = 0.083750       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 13.400000 System Load current = 0.083750
+
+
+
+Effective Voltages = 13.400000  ,13.100000      ,13.100000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 13.462450      Cell 2 Voltage = 13.351810      Cell 3 Voltage = 13.395812 
+Cell 1 Current = 0.083750       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 13.300000 System Load current = 0.083750
+
+
+
+Effective Voltages = 13.300000  ,13.100000      ,13.100000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 13.439137      Cell 2 Voltage = 13.351810      Cell 3 Voltage = 13.395812 
+Cell 1 Current = 0.083125       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 13.300000 System Load current = 0.083125
+
+
+
+Effective Voltages = 13.300000  ,13.100000      ,13.100000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 13.415863      Cell 2 Voltage = 13.351810      Cell 3 Voltage = 13.395812 
+Cell 1 Current = 0.083125       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 13.300000 System Load current = 0.083125
+
+
+
+Effective Voltages = 13.300000  ,13.100000      ,13.100000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 13.392630      Cell 2 Voltage = 13.351810      Cell 3 Voltage = 13.395812 
+Cell 1 Current = 0.083125       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 13.300000 System Load current = 0.083125
+
+
+
+Effective Voltages = 13.300000  ,13.100000      ,13.100000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 13.369436      Cell 2 Voltage = 13.351810      Cell 3 Voltage = 13.395812 
+Cell 1 Current = 0.083125       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 13.200000 System Load current = 0.083125
+
+
+
+Effective Voltages = 13.200000  ,13.100000      ,13.100000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 13.346457      Cell 2 Voltage = 13.351810      Cell 3 Voltage = 13.395812 
+Cell 1 Current = 0.082500       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 13.200000 System Load current = 0.082500
+
+
+
+Effective Voltages = 13.200000  ,13.100000      ,13.100000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 13.323518      Cell 2 Voltage = 13.351810      Cell 3 Voltage = 13.395812 
+Cell 1 Current = 0.082500       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 13.200000 System Load current = 0.082500
+
+
+
+Effective Voltages = 13.200000  ,13.100000      ,13.100000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 13.300618      Cell 2 Voltage = 13.351810      Cell 3 Voltage = 13.395812 
+Cell 1 Current = 0.082500       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 13.200000 System Load current = 0.082500
+
+
+
+Effective Voltages = 13.200000  ,13.100000      ,13.100000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 13.277758      Cell 2 Voltage = 13.351810      Cell 3 Voltage = 13.395812 
+Cell 1 Current = 0.082500       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 13.100000 System Load current = 0.082500
+
+
+
+Effective Voltages = 13.100000  ,13.100000      ,13.100000
+Switch 1 = 1                    Switch 2 = 1                    Switch 3 = 1
+Cell 1 Voltage = 12.726457      Cell 2 Voltage = 12.880071      Cell 3 Voltage = 13.018853 
+Cell 1 Current = 5.978975       Cell 2 Current = 4.769744       Cell 3 Current = 3.575442 
+System Load Voltage = 12.700000 System Load current = 14.324160
+
+
+
+Effective Voltages = 12.600000  ,12.700000      ,12.700000
+Switch 1 = 0                    Switch 2 = 1                    Switch 3 = 1
+Cell 1 Voltage = 12.726457      Cell 2 Voltage = 12.512482      Cell 3 Voltage = 12.626519 
+Cell 1 Current = 0.000000       Cell 2 Current = 2.568539       Cell 3 Current = 2.552684 
+System Load Voltage = 12.600000 System Load current = 5.121223
+
+
+
+Effective Voltages = 12.600000  ,12.300000      ,12.300000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 12.705577      Cell 2 Voltage = 12.512482      Cell 3 Voltage = 12.626519 
+Cell 1 Current = 0.078750       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 12.600000 System Load current = 0.078750
+
+
+
+Effective Voltages = 12.600000  ,12.300000      ,12.300000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 12.684731      Cell 2 Voltage = 12.512482      Cell 3 Voltage = 12.626519 
+Cell 1 Current = 0.078750       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 12.600000 System Load current = 0.078750
+
+
+
+Effective Voltages = 12.600000  ,12.300000      ,12.300000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 12.663920      Cell 2 Voltage = 12.512482      Cell 3 Voltage = 12.626519 
+Cell 1 Current = 0.078750       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 12.500000 System Load current = 0.078750
+
+
+
+Effective Voltages = 12.500000  ,12.300000      ,12.300000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 12.643309      Cell 2 Voltage = 12.512482      Cell 3 Voltage = 12.626519 
+Cell 1 Current = 0.078125       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 12.500000 System Load current = 0.078125
+
+
+
+Effective Voltages = 12.500000  ,12.300000      ,12.300000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 12.622730      Cell 2 Voltage = 12.512482      Cell 3 Voltage = 12.626519 
+Cell 1 Current = 0.078125       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 12.500000 System Load current = 0.078125
+
+
+
+Effective Voltages = 12.500000  ,12.300000      ,12.300000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 12.602185      Cell 2 Voltage = 12.512482      Cell 3 Voltage = 12.626519 
+Cell 1 Current = 0.078125       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 12.500000 System Load current = 0.078125
+
+
+
+Effective Voltages = 12.500000  ,12.300000      ,12.300000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 12.581674      Cell 2 Voltage = 12.512482      Cell 3 Voltage = 12.626519 
+Cell 1 Current = 0.078125       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 12.500000 System Load current = 0.078125
+
+
+
+Effective Voltages = 12.500000  ,12.300000      ,12.300000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 12.561195      Cell 2 Voltage = 12.512482      Cell 3 Voltage = 12.626519 
+Cell 1 Current = 0.078125       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 12.400000 System Load current = 0.078125
+
+
+
+Effective Voltages = 12.400000  ,12.300000      ,12.300000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 12.540915      Cell 2 Voltage = 12.512482      Cell 3 Voltage = 12.626519 
+Cell 1 Current = 0.077500       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 12.400000 System Load current = 0.077500
+
+
+
+Effective Voltages = 12.400000  ,12.300000      ,12.300000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 12.520666      Cell 2 Voltage = 12.512482      Cell 3 Voltage = 12.626519 
+Cell 1 Current = 0.077500       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 12.400000 System Load current = 0.077500
+
+
+
+Effective Voltages = 12.400000  ,12.300000      ,12.300000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 12.500450      Cell 2 Voltage = 12.512482      Cell 3 Voltage = 12.626519 
+Cell 1 Current = 0.077500       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 12.400000 System Load current = 0.077500
+
+
+
+Effective Voltages = 12.400000  ,12.300000      ,12.300000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 12.480268      Cell 2 Voltage = 12.512482      Cell 3 Voltage = 12.626519 
+Cell 1 Current = 0.077500       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 12.400000 System Load current = 0.077500
+
+
+
+Effective Voltages = 12.400000  ,12.300000      ,12.300000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 12.460117      Cell 2 Voltage = 12.512482      Cell 3 Voltage = 12.626519 
+Cell 1 Current = 0.077500       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 12.300000 System Load current = 0.077500
+
+
+
+Effective Voltages = 12.300000  ,12.300000      ,12.300000
+Switch 1 = 1                    Switch 2 = 1                    Switch 3 = 1
+Cell 1 Voltage = 11.974360      Cell 2 Voltage = 12.097395      Cell 3 Voltage = 12.292907 
+Cell 1 Current = 5.613846       Cell 2 Current = 4.478462       Cell 3 Current = 3.357094 
+System Load Voltage = 12.000000 System Load current = 13.449402
+
+
+
+Effective Voltages = 11.800000  ,11.900000      ,12.000000
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 11.974360      Cell 2 Voltage = 12.097395      Cell 3 Voltage = 12.271407 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.074074 
+System Load Voltage = 12.000000 System Load current = 0.074074
+
+
+
+Effective Voltages = 11.800000  ,11.900000      ,12.000000
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 11.974360      Cell 2 Voltage = 12.097395      Cell 3 Voltage = 12.249945 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.074074 
+System Load Voltage = 12.000000 System Load current = 0.074074
+
+
+
+Effective Voltages = 11.800000  ,11.900000      ,12.000000
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 11.974360      Cell 2 Voltage = 12.097395      Cell 3 Voltage = 12.228519 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.074074 
+System Load Voltage = 12.000000 System Load current = 0.074074
+
+
+
+Effective Voltages = 11.800000  ,11.900000      ,12.000000
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 11.974360      Cell 2 Voltage = 12.097395      Cell 3 Voltage = 12.207132 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.074074 
+System Load Voltage = 11.900000 System Load current = 0.074074
+
+
+
+Effective Voltages = 11.800000  ,11.900000      ,11.900000
+Switch 1 = 0                    Switch 2 = 1                    Switch 3 = 1
+Cell 1 Voltage = 11.974360      Cell 2 Voltage = 11.773891      Cell 3 Voltage = 11.862433 
+Cell 1 Current = 0.000000       Cell 2 Current = 2.406741       Cell 3 Current = 2.391885 
+System Load Voltage = 11.800000 System Load current = 4.798626
+
+
+
+Effective Voltages = 11.800000  ,11.600000      ,11.600000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 11.955961      Cell 2 Voltage = 11.773891      Cell 3 Voltage = 11.862433 
+Cell 1 Current = 0.073750       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 11.800000 System Load current = 0.073750
+
+
+
+Effective Voltages = 11.800000  ,11.600000      ,11.600000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 11.937592      Cell 2 Voltage = 11.773891      Cell 3 Voltage = 11.862433 
+Cell 1 Current = 0.073750       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 11.800000 System Load current = 0.073750
+
+
+
+Effective Voltages = 11.800000  ,11.600000      ,11.600000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 11.919250      Cell 2 Voltage = 11.773891      Cell 3 Voltage = 11.862433 
+Cell 1 Current = 0.073750       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 11.800000 System Load current = 0.073750
+
+
+
+Effective Voltages = 11.800000  ,11.600000      ,11.600000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 11.900936      Cell 2 Voltage = 11.773891      Cell 3 Voltage = 11.862433 
+Cell 1 Current = 0.073750       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 11.800000 System Load current = 0.073750
+
+
+
+Effective Voltages = 11.800000  ,11.600000      ,11.600000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 11.882650      Cell 2 Voltage = 11.773891      Cell 3 Voltage = 11.862433 
+Cell 1 Current = 0.073750       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 11.800000 System Load current = 0.073750
+
+
+
+Effective Voltages = 11.800000  ,11.600000      ,11.600000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 11.864393      Cell 2 Voltage = 11.773891      Cell 3 Voltage = 11.862433 
+Cell 1 Current = 0.073750       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 11.700000 System Load current = 0.073750
+
+
+
+Effective Voltages = 11.700000  ,11.600000      ,11.600000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 11.846318      Cell 2 Voltage = 11.773891      Cell 3 Voltage = 11.862433 
+Cell 1 Current = 0.073125       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 11.700000 System Load current = 0.073125
+
+
+
+Effective Voltages = 11.700000  ,11.600000      ,11.600000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 11.828271      Cell 2 Voltage = 11.773891      Cell 3 Voltage = 11.862433 
+Cell 1 Current = 0.073125       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 11.700000 System Load current = 0.073125
+
+
+
+Effective Voltages = 11.700000  ,11.600000      ,11.600000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 11.810251      Cell 2 Voltage = 11.773891      Cell 3 Voltage = 11.862433 
+Cell 1 Current = 0.073125       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 11.700000 System Load current = 0.073125
+
+
+
+Effective Voltages = 11.700000  ,11.600000      ,11.600000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 11.792259      Cell 2 Voltage = 11.773891      Cell 3 Voltage = 11.862433 
+Cell 1 Current = 0.073125       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 11.700000 System Load current = 0.073125
+
+
+
+Effective Voltages = 11.700000  ,11.600000      ,11.600000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 11.774295      Cell 2 Voltage = 11.773891      Cell 3 Voltage = 11.862433 
+Cell 1 Current = 0.073125       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 11.700000 System Load current = 0.073125
+
+
+
+Effective Voltages = 11.700000  ,11.600000      ,11.600000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 11.756357      Cell 2 Voltage = 11.773891      Cell 3 Voltage = 11.862433 
+Cell 1 Current = 0.073125       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 11.600000 System Load current = 0.073125
+
+
+
+Effective Voltages = 11.600000  ,11.600000      ,11.600000
+Switch 1 = 1                    Switch 2 = 1                    Switch 3 = 1
+Cell 1 Voltage = 11.324119      Cell 2 Voltage = 11.405535      Cell 3 Voltage = 11.523377 
+Cell 1 Current = 5.294359       Cell 2 Current = 4.223590       Cell 3 Current = 3.166040 
+System Load Voltage = 11.300000 System Load current = 12.683989
+
+
+
+Effective Voltages = 11.200000  ,11.200000      ,11.300000
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 11.324119      Cell 2 Voltage = 11.405535      Cell 3 Voltage = 11.501608 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.069753 
+System Load Voltage = 11.200000 System Load current = 0.069753
+
+
+
+Effective Voltages = 11.200000  ,11.200000      ,11.200000
+Switch 1 = 1                    Switch 2 = 1                    Switch 3 = 1
+Cell 1 Voltage = 10.922129      Cell 2 Voltage = 11.061007      Cell 3 Voltage = 11.184201 
+Cell 1 Current = 5.111795       Cell 2 Current = 4.077949       Cell 3 Current = 3.056866 
+System Load Voltage = 10.900000 System Load current = 12.246609
+
+
+
+Effective Voltages = 10.800000  ,10.900000      ,10.900000
+Switch 1 = 0                    Switch 2 = 1                    Switch 3 = 1
+Cell 1 Voltage = 10.922129      Cell 2 Voltage = 10.790075      Cell 3 Voltage = 10.852386 
+Cell 1 Current = 0.000000       Cell 2 Current = 2.204494       Cell 3 Current = 2.190886 
+System Load Voltage = 10.800000 System Load current = 4.395380
+
+
+
+Effective Voltages = 10.800000  ,10.600000      ,10.600000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 10.906770      Cell 2 Voltage = 10.790075      Cell 3 Voltage = 10.852386 
+Cell 1 Current = 0.067500       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 10.800000 System Load current = 0.067500
+
+
+
+Effective Voltages = 10.800000  ,10.600000      ,10.600000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 10.891432      Cell 2 Voltage = 10.790075      Cell 3 Voltage = 10.852386 
+Cell 1 Current = 0.067500       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 10.800000 System Load current = 0.067500
+
+
+
+Effective Voltages = 10.800000  ,10.600000      ,10.600000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 10.876116      Cell 2 Voltage = 10.790075      Cell 3 Voltage = 10.852386 
+Cell 1 Current = 0.067500       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 10.800000 System Load current = 0.067500
+
+
+
+Effective Voltages = 10.800000  ,10.600000      ,10.600000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 10.860822      Cell 2 Voltage = 10.790075      Cell 3 Voltage = 10.852386 
+Cell 1 Current = 0.067500       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 10.700000 System Load current = 0.067500
+
+
+
+Effective Voltages = 10.700000  ,10.600000      ,10.600000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 10.845690      Cell 2 Voltage = 10.790075      Cell 3 Voltage = 10.852386 
+Cell 1 Current = 0.066875       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 10.700000 System Load current = 0.066875
+
+
+
+Effective Voltages = 10.700000  ,10.600000      ,10.600000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 10.830579      Cell 2 Voltage = 10.790075      Cell 3 Voltage = 10.852386 
+Cell 1 Current = 0.066875       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 10.700000 System Load current = 0.066875
+
+
+
+Effective Voltages = 10.700000  ,10.600000      ,10.600000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 10.815490      Cell 2 Voltage = 10.790075      Cell 3 Voltage = 10.852386 
+Cell 1 Current = 0.066875       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 10.700000 System Load current = 0.066875
+
+
+
+Effective Voltages = 10.700000  ,10.600000      ,10.600000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 10.800422      Cell 2 Voltage = 10.790075      Cell 3 Voltage = 10.852386 
+Cell 1 Current = 0.066875       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 10.700000 System Load current = 0.066875
+
+
+
+Effective Voltages = 10.700000  ,10.600000      ,10.600000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 10.785375      Cell 2 Voltage = 10.790075      Cell 3 Voltage = 10.852386 
+Cell 1 Current = 0.066875       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 10.700000 System Load current = 0.066875
+
+
+
+Effective Voltages = 10.700000  ,10.600000      ,10.600000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 10.770349      Cell 2 Voltage = 10.790075      Cell 3 Voltage = 10.852386 
+Cell 1 Current = 0.066875       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 10.700000 System Load current = 0.066875
+
+
+
+Effective Voltages = 10.700000  ,10.600000      ,10.600000
+Switch 1 = 1                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 10.755343      Cell 2 Voltage = 10.790075      Cell 3 Voltage = 10.852386 
+Cell 1 Current = 0.066875       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 10.600000 System Load current = 0.066875
+
+
+
+Effective Voltages = 10.600000  ,10.600000      ,10.600000
+Switch 1 = 1                    Switch 2 = 1                    Switch 3 = 1
+Cell 1 Voltage = 10.393997      Cell 2 Voltage = 10.481600      Cell 3 Voltage = 10.568939 
+Cell 1 Current = 4.837949       Cell 2 Current = 3.859488       Cell 3 Current = 2.893106 
+System Load Voltage = 10.300000 System Load current = 11.590542
+
+
+
+Effective Voltages = 10.300000  ,10.300000      ,10.300000
+Switch 1 = 1                    Switch 2 = 1                    Switch 3 = 1
+Cell 1 Voltage = 10.111228      Cell 2 Voltage = 10.190424      Cell 3 Voltage = 10.300709 
+Cell 1 Current = 4.701026       Cell 2 Current = 3.750257       Cell 3 Current = 2.811225 
+System Load Voltage = 10.100000 System Load current = 11.262507
+
+
+
+Effective Voltages = 10.000000  ,10.000000      ,10.100000
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 10.111228      Cell 2 Voltage = 10.190424      Cell 3 Voltage = 10.283316 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.062346 
+System Load Voltage = 10.000000 System Load current = 0.062346
+
+
+
+Effective Voltages = 10.000000  ,10.000000      ,10.000000
+Switch 1 = 1                    Switch 2 = 1                    Switch 3 = 1
+Cell 1 Voltage = 9.844164       Cell 2 Voltage = 9.915583       Cell 3 Voltage = 10.029936 
+Cell 1 Current = 4.564103       Cell 2 Current = 3.641026       Cell 3 Current = 2.729345 
+System Load Voltage = 9.800000  System Load current = 10.934473
+
+
+
+Effective Voltages = 9.700000   ,9.700000       ,9.800000
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 9.844164       Cell 2 Voltage = 9.915583       Cell 3 Voltage = 10.013503 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.060494 
+System Load Voltage = 9.800000  System Load current = 0.060494
+
+
+
+Effective Voltages = 9.700000   ,9.700000       ,9.800000
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 9.844164       Cell 2 Voltage = 9.915583       Cell 3 Voltage = 9.997097 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.060494 
+System Load Voltage = 9.800000  System Load current = 0.060494
+
+
+
+Effective Voltages = 9.700000   ,9.700000       ,9.800000
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 9.844164       Cell 2 Voltage = 9.915583       Cell 3 Voltage = 9.980718 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.060494 
+System Load Voltage = 9.700000  System Load current = 0.060494
+
+
+
+Effective Voltages = 9.700000   ,9.700000       ,9.700000
+Switch 1 = 1                    Switch 2 = 1                    Switch 3 = 1
+Cell 1 Voltage = 9.591954       Cell 2 Voltage = 9.656177       Cell 3 Voltage = 9.742171 
+Cell 1 Current = 4.427179       Cell 2 Current = 3.531795       Cell 3 Current = 2.647464 
+System Load Voltage = 9.500000  System Load current = 10.606438
+
+
+
+Effective Voltages = 9.500000   ,9.500000       ,9.500000
+Switch 1 = 1                    Switch 2 = 1                    Switch 3 = 1
+Cell 1 Voltage = 9.351273       Cell 2 Voltage = 9.408766       Cell 3 Voltage = 9.514128 
+Cell 1 Current = 4.335897       Cell 2 Current = 3.458974       Cell 3 Current = 2.592877 
+System Load Voltage = 9.300000  System Load current = 10.387749
+
+
+
+Effective Voltages = 9.200000   ,9.200000       ,9.300000
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 9.351273       Cell 2 Voltage = 9.408766       Cell 3 Voltage = 9.499335 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.057407 
+System Load Voltage = 9.300000  System Load current = 0.057407
+
+
+
+Effective Voltages = 9.200000   ,9.200000       ,9.300000
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 9.351273       Cell 2 Voltage = 9.408766       Cell 3 Voltage = 9.484566 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.057407 
+System Load Voltage = 9.300000  System Load current = 0.057407
+
+
+
+Effective Voltages = 9.200000   ,9.200000       ,9.300000
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 9.351273       Cell 2 Voltage = 9.408766       Cell 3 Voltage = 9.469819 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.057407 
+System Load Voltage = 9.200000  System Load current = 0.057407
+
+
+
+Effective Voltages = 9.200000   ,9.200000       ,9.200000
+Switch 1 = 1                    Switch 2 = 1                    Switch 3 = 1
+Cell 1 Voltage = 9.124041       Cell 2 Voltage = 9.175307       Cell 3 Voltage = 9.255151 
+Cell 1 Current = 4.198974       Cell 2 Current = 3.349744       Cell 3 Current = 2.510997 
+System Load Voltage = 9.000000  System Load current = 10.059714
+
+
+
+Effective Voltages = 9.000000   ,9.000000       ,9.000000
+Switch 1 = 1                    Switch 2 = 1                    Switch 3 = 1
+Cell 1 Voltage = 8.907149       Cell 2 Voltage = 8.952590       Cell 3 Voltage = 9.049910 
+Cell 1 Current = 4.107692       Cell 2 Current = 3.276923       Cell 3 Current = 2.456410 
+System Load Voltage = 8.800000  System Load current = 9.841025
+
+
+
+Effective Voltages = 8.800000   ,8.800000       ,8.800000
+Switch 1 = 1                    Switch 2 = 1                    Switch 3 = 1
+Cell 1 Voltage = 8.700119       Cell 2 Voltage = 8.740108       Cell 3 Voltage = 8.853680 
+Cell 1 Current = 4.016410       Cell 2 Current = 3.204103       Cell 3 Current = 2.401823 
+System Load Voltage = 8.600000  System Load current = 9.622336
+
+
+
+Effective Voltages = 8.600000   ,8.600000       ,8.600000
+Switch 1 = 1                    Switch 2 = 1                    Switch 3 = 1
+Cell 1 Voltage = 8.502497       Cell 2 Voltage = 8.537384       Cell 3 Voltage = 8.666067 
+Cell 1 Current = 3.925128       Cell 2 Current = 3.131282       Cell 3 Current = 2.347236 
+System Load Voltage = 8.500000  System Load current = 9.403647
+
+
+
+Effective Voltages = 8.400000   ,8.400000       ,8.500000
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 8.502497       Cell 2 Voltage = 8.537384       Cell 3 Voltage = 8.653752 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.052469 
+System Load Voltage = 8.400000  System Load current = 0.052469
+
+
+
+Effective Voltages = 8.400000   ,8.400000       ,8.400000
+Switch 1 = 1                    Switch 2 = 1                    Switch 3 = 1
+Cell 1 Voltage = 8.313855       Cell 2 Voltage = 8.343967       Cell 3 Voltage = 8.474641 
+Cell 1 Current = 3.833846       Cell 2 Current = 3.058461       Cell 3 Current = 2.292650 
+System Load Voltage = 8.300000  System Load current = 9.184957
+
+
+
+Effective Voltages = 8.200000   ,8.200000       ,8.300000
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 8.313855       Cell 2 Voltage = 8.343967       Cell 3 Voltage = 8.462881 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.051235 
+System Load Voltage = 8.300000  System Load current = 0.051235
+
+
+
+Effective Voltages = 8.200000   ,8.200000       ,8.300000
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 8.313855       Cell 2 Voltage = 8.343967       Cell 3 Voltage = 8.451138 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.051235 
+System Load Voltage = 8.200000  System Load current = 0.051235
+
+
+
+Effective Voltages = 8.200000   ,8.200000       ,8.200000
+Switch 1 = 1                    Switch 2 = 1                    Switch 3 = 1
+Cell 1 Voltage = 8.133791       Cell 2 Voltage = 8.159433       Cell 3 Voltage = 8.280385 
+Cell 1 Current = 3.742564       Cell 2 Current = 2.985641       Cell 3 Current = 2.238063 
+System Load Voltage = 8.100000  System Load current = 8.966268
+
+
+
+Effective Voltages = 8.000000   ,8.000000       ,8.100000
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 8.133791       Cell 2 Voltage = 8.159433       Cell 3 Voltage = 8.269172 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.050000 
+System Load Voltage = 8.100000  System Load current = 0.050000
+
+
+
+Effective Voltages = 8.000000   ,8.000000       ,8.100000
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 8.133791       Cell 2 Voltage = 8.159433       Cell 3 Voltage = 8.257974 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.050000 
+System Load Voltage = 8.100000  System Load current = 0.050000
+
+
+
+Effective Voltages = 8.000000   ,8.000000       ,8.100000
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 1
+Cell 1 Voltage = 8.133791       Cell 2 Voltage = 8.159433       Cell 3 Voltage = 8.246791 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.050000 
+System Load Voltage = 0.000000  System Load current = 0.050000
+
+
+
+Effective Voltages = 8.000000   ,8.000000       ,8.000000
+Switch 1 = 0                    Switch 2 = 0                    Switch 3 = 0
+Cell 1 Voltage = 8.133791       Cell 2 Voltage = 8.159433       Cell 3 Voltage = 8.246791 
+Cell 1 Current = 0.000000       Cell 2 Current = 0.000000       Cell 3 Current = 0.000000 
+System Load Voltage = 0.000000  System Load current = 0.000000
+
+
+Processing done

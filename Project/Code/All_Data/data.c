@@ -33,17 +33,11 @@
 /*******************************************************************************/
 /*                          LOCAL MODULE VARIABLES                             */
 /*******************************************************************************/
-float sfa_cellvoltage[3];        
-float sfa_cellresistance[3];     
+    
 float sf_loadr;
 float sf_systemvoltage;
 float sf_systemcurrent;
-float sfa_cellcurrent[3];
-
-
-tswitch_state ts_switchvalue[3];
-
-
+Battery_data battery[3] = {0};
 
 /**************************************************************************
 * Function name : void Set_CellVolatages(float *voltage)
@@ -53,9 +47,9 @@ tswitch_state ts_switchvalue[3];
 ***************************************************************************/
 void Set_CellVolatages(float *voltage)
 {
-    sfa_cellvoltage[0] = voltage[0];
-    sfa_cellvoltage[1] = voltage[1];
-    sfa_cellvoltage[2] = voltage[2];
+    battery[0].voltage = voltage[0];
+    battery[1].voltage = voltage[1];
+    battery[2].voltage = voltage[2];
 }
 
 /**************************************************************************
@@ -66,9 +60,9 @@ void Set_CellVolatages(float *voltage)
 ***************************************************************************/ 
 void Get_CellVolatages(float *voltage)
 {
-    voltage[0] = sfa_cellvoltage[0];
-    voltage[1] = sfa_cellvoltage[1];
-    voltage[2] = sfa_cellvoltage[2];
+    voltage[0] = battery[0].voltage;
+    voltage[1] = battery[1].voltage;
+    voltage[2] = battery[2].voltage;
 }
 
 /**************************************************************************
@@ -101,9 +95,9 @@ void Get_Systemcurrent(float *current)
 ***************************************************************************/ 
 void Get_Cellcurrent(float *current)
 {
-    current[0] = sfa_cellcurrent[0];
-    current[1] = sfa_cellcurrent[1];
-    current[2] = sfa_cellcurrent[2];
+    current[0] = battery[0].current;
+    current[1] = battery[1].current;
+    current[2] = battery[2].current;
 }
 
 /**************************************************************************
@@ -114,9 +108,9 @@ void Get_Cellcurrent(float *current)
 ***************************************************************************/ 
 void Get_SwitchState(tswitch_state *switch_state)
 {
-    switch_state[0] = ts_switchvalue[0];
-    switch_state[1] = ts_switchvalue[1];
-    switch_state[2] = ts_switchvalue[2];
+    switch_state[0] = battery[0].switchstate;
+    switch_state[1] = battery[1].switchstate;
+    switch_state[2] = battery[2].switchstate;
 }
 
 /**************************************************************************
@@ -138,9 +132,9 @@ void Set_LoadValue(float loadohm)
 ***************************************************************************/
 void Set_InternalResistance(float *internalresistance)
 {
-    sfa_cellresistance[0] = internalresistance[0];
-    sfa_cellresistance[1] = internalresistance[1];
-    sfa_cellresistance[2] = internalresistance[2];
+    battery[0].resistance = internalresistance[0];
+    battery[1].resistance = internalresistance[1];
+    battery[2].resistance = internalresistance[2];
 }
 
 /**************************************************************************
@@ -151,7 +145,7 @@ void Set_InternalResistance(float *internalresistance)
 ***************************************************************************/
 void Set_SwitchState(tswitch_state *switch_state)
 {
-    ts_switchvalue[0] = switch_state[0];
-    ts_switchvalue[1] = switch_state[1];
-    ts_switchvalue[2] = switch_state[2];
+    battery[0].switchstate = switch_state[0];
+    battery[1].switchstate = switch_state[1];
+    battery[2].switchstate = switch_state[2];
 }
