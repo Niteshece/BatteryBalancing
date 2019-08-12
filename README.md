@@ -1,6 +1,5 @@
-#BatteryBalancing
 Directory & File Structure : 
-Project--|
+Project--|	
                |-CSR_Requirements - Battery_Balancing_C++.pdf				
                |-Code
                	|-All_Data
@@ -111,6 +110,40 @@ Internal Resistance Rn and the Load RL are in series. Net resistance will be Rn+
 With this we can find drop across Rn as:
 Vntemp = In*Rn
 By this way we can find effective cell potential for Load RL from Lth and mth cell as VLtemp& Vmtemp These three Voltages can be compares, and cell with highest effective voltage can be connected into the circuit. Rest all the cells can be kept with opened switch. In this way switch positions can be determined.
+Enhancements:
+1.	Effective voltages are approximated to one decimal place and then compared. This feature can be disabled by changing the value of macro in ROUNDOFFENABLE to 0. This macro can be found in BatteryOperation.h.
+2.	Earlier the voltage for reduced with respect to time. Now the voltage is reduced with respect to time and current discharged both.
+For example:
+Consider a battery of capacity 100Ahr. This is equivalent to 100*60*60Asec = 360000Asec. By this it means this battery can draw 1Ampere current at constant voltage for 360000seconds.
+Now if run the system for 1sec but current drawn is .5Amp Then,
+•	In previous case : Voltage was reduced with respect to time only viz.:
+Volatge_remaining = volatge_present-(Time(insec))*(slope)*volatge_present
+•	In new case the current drawn in that 1 second is  also taken in consideration. current drawn was 0.5Amp, so by this effective time/capacity lost by batter is .5 only, Therefore:
+volatge_remaining = volatge_present-(EffectiveTime(insec))*(slope)*volatge_present.
+Reference  : https://www.electronicdesign.com/test-measurement/measuring-cell-capacity
+New function introduced in order to provide this functionality is :
+app_CalculateEffectiveTime – This function will convert the Amp lost parameter in terms of time and an effective time is provided to calculate the voltage delivered by battery.
+3.	Use of Two step linear discharge curve
+Using above reference(Enhancement 2) it is understood for const. current time is fixed by battery capacity. So assuming that our each battery is of 360000Asec, It will discharge to cut off voltage (8V) within 360000sec. The discharge curve is distributed in two parts.
+•	Slow Discharge : It is initial phase of system discharge where it will try to maintain a close to constant voltage. In this the voltage remaining would be slowly decreasing.
+•	Fast discharge : In this phase of system, the voltage will reduce much rapidly as compared to the previous scenario.
 
+ 
+
+From 100% to 70% the output voltage reduces at a slower pace. From 70% to cut off voltage reduces at comparatively faster pace.
+These slopes are m1 & m2.
+They are found with the help of formula:
+m = y2-y1/x2-x1
+New functions introduced in order to perform this job are :
+o	static void app_UpdateDischargeSlope(void) : This function keeps checking the activities of cell voltages and switches the slope for voltage calculation as per monitoring.
+o	app_CalculateSlope : based on the user provided inputs this function calculates the slope m1&m2 using the above mentioned method. When to use which slope is decided by app_UpdateDischargeSlope.
+4.	To increase the modularity & readability of code, all the battery data are organized in a structure instead of operating on them on isolated basis.
+5.	Some Variables are renamed in order to make the code more understandable.
+6.	Improved the commenting in code.
+7.	VoltageCompare function is split into two functions to increase the modularity and enable the better ease to test the code.
+•	app_EffectiveVoltageCalculate : This function calculates the effective voltages of all the cells across the Load RL. 
+•	app_EffectiveVoltageCompare : The above calculated effective voltages are compared and used to decide the next state of switches by this function. 
+8.	Input validation check has been incorporated in the code now. With this check one new function is introduced in application.c file :
+a.	app_GatherData() : This API will take care of gathering and validating the data.
 
 
